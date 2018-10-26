@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/gegorov/ghosthost#readme",
   "devDependencies": {
-    "stylelint": "^9.6.0"
+    "stylelint": "^9.6.0",
+    "stylelint-config-htmlacademy": "^0.1.1"
   }
 }
