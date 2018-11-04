@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Myriad Pro";
+  font-weight: bold;
+  src: url("../fonts/MYRIADPRO-BOLD.OTF") format("opentype");
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  font-weight: normal;
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF") format("opentype");
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  width: 1600px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/homebg.jpg") no-repeat center top / cover;
+  height: 945px;
+  margin: 0 auto;
+}
+
+
+.header-wrapper {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #2e2f31;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo {
+  margin-top: 33px;
+  padding-left: 5px;
+}
+
+nav {
+  float: right;
+  margin-top: 36px;
+  margin-bottom: 50px;
+}
+
+
+.nav-item {
+  display: inline;
+  padding-left: 65px;
+  list-style-type: none;
+}
+
+
+.nav-item-link {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  height: 100%;
+  padding-bottom: 34px;
+}
+
+.nav-item-link:hover {
+  border-bottom: 2px solid #ffffff;
+  color: red;
+}
+
+.banner {
+  color: #ffffff;
+  margin-top: 325px;
+  margin-left: 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Myriad Pro", "Lato", sans-serif;
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.banner-text {
+  font-family: "Georgia", "Lato", serif;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 47px;
+  letter-spacing: 0.1px;
+}
+
+.member {
+  background: #2fac6c;
+  display: flex;
+}
+
+.member_login {
+  width: 49%;
+  background: #21424a;
+  right: 0;
+  position: relative;
+  padding-left: 472px;
+  padding-bottom: 2px;
+}
+
+.member_register {
+  width: 51%;
+  position: relative;
+  padding-left: 267px;
+  padding-bottom: 2px;
+}
+
+.member_login,
+.member_register {
+
+  height: 120px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.member_login::before {
+  border-top: 120px solid #21424a;
+  border-left: 0 solid transparent;
+  border-right: 30px solid transparent;
+  content: "";
+  height: 0;
+  right: -30px;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+.member-link {
+  color: #ffffff;
+  letter-spacing: 0.6px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
